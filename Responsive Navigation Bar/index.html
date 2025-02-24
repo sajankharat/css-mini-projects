@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Navigation Bar</title>
+</head>
+<body>
+    <header class="nav-container">
+        <div class="nav-bar">
+            <!-- Logo Section -->
+            <div class="logo-container">
+                <img class="logo" src="/images/logo.svg" alt="logo">
+                <span>Procode</span>
+            </div>
+            <!-- Hamburger Icon for Mobile Menu -->
+            <label for="checkbox-1"> 
+                <img class="hamburger-icon" src="/images/Hamburger.svg" alt="Hamburger">
+            </label>
+            <input type="checkbox" id="checkbox-1">
+            <div class="mobile-menu">
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <!-- Dropdown for Courses -->
+                    <label class="courses" for="checkbox-2">
+                        <a>Courses</a> 
+                        <input type="checkbox" id="checkbox-2"> 
+                        <img src="/images/dropdown-arrow.svg" alt=""> 
+                        <ul class="courses-list">
+                            <li><a href="https://youtu.be/k2DSi1zGEc8?feature=shared" target="_blank">Full HTML Course for Beginners in Hindi</a></li>
+                            <li><a href="https://youtu.be/ESnrn1kAD4E?feature=shared" target="_blank">Full CSS Course for Beginners in Hindi</a></li>
+                            <li><a href="https://youtu.be/9P9h5h9kBmU?feature=shared" target="_blank">The Complete JavaScript Course</a></li>
+                            <li><a href="https://youtu.be/Ez8F0nW6S-w?feature=shared" target="_blank">Git and GitHub Fundamentals</a></li>
+                            <li><a href="https://youtu.be/p0Q8SQSCoZg?feature=shared" target="_blank">Tailwind CSS Complete Course in Hindi</a></li>
+                            <li><a href="https://youtu.be/-mJFZp84TIY?feature=shared" target="_blank">React.js Full Course in Hindi</a></li>
+                        </ul>  
+                    </label> 
+                    <li><a href="#" target="_blank">About</a></li>
+                    <li><a href="#" target="_blank">Contact</a></li>
+                </ul>
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <img src="/images/User-Avatar.svg" alt="avatar">
+                        <div class="dot"></div>
+                    </div>
+                    <p>sajan kharat</p>
+                    <label for="checkbox-1">
+                        <img  class="close-icon" src="/images/close-icon.svg" alt="close-icon">
+                    </label>
+                </div> 
+            </div>
+        </div>
+    </header>
+</body>
+</html>
