@@ -1,0 +1,154 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito' ;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.nav-container{
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 4px 0px #0000001A;
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 100px;
+    gap: 5px;
+    max-width: 2000px;
+    position: relative;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-size: 20px;
+    color: #2A3342;
+}
+.mobile-menu{
+    display: flex;
+    flex-grow: 1;
+    gap: 5px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 54px;
+    list-style-type: none;
+    margin: auto;
+    position: relative;
+}
+.menu li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #2A3342;
+}
+
+.courses{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+} 
+.courses-list{
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    top: 60px;
+    box-shadow: 0px 4px 10px 0px #1E1B1B1A;
+    border: 1.5px solid #E9EAEB;
+    border-radius: 5px;
+    max-width: 245px;
+    padding: 16px 26px;
+    margin-left: 15px;
+    text-align: left;
+}
+#checkbox-2:checked ~ img{
+    transform: rotate(-180deg);
+    transition: transform 0.24s ease-in-out;
+}
+.courses-list li a{
+    font-size: 12px;
+    line-height: 16.37px;
+}
+.courses-list li :hover{
+    border-bottom: 1.5px solid #448cd3;
+}
+#checkbox-2:checked ~ .courses-list{
+    display: block;
+}
+.avatar-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 14px;
+}
+.avatar{
+    position: relative;
+}
+.avatar .dot{
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    background-color: #22C55E;
+    position: absolute;
+    bottom: 4px;
+    right: -2px;
+}
+.hamburger-icon, .close-icon, #checkbox-2, #checkbox-1{
+    display: none;
+}
+
+
+@media (max-width: 670px){
+    .nav-bar{
+        padding: 15px 42px;
+        justify-content: space-between;
+    }
+    .mobile-menu{
+        display: none;
+        position: absolute;
+        top: 12px;
+        right: 36px;
+        flex-direction: column-reverse;
+        justify-content:center;
+        align-items: center;
+        max-width: 245px;
+        width: 100%;
+        background-color: white;
+        padding: 12px 0px;
+        border: 1.5px solid #E9EAEB;
+        border-radius: 5px;
+        box-shadow: 0px 1px 4px 0px #0000001A;
+    }
+    .menu{
+        flex-direction: column;
+        gap: 8px;
+        align-items: self-start;
+        width: 100%;
+        padding: 8px 36px;
+        border-top: 1px solid #E9EAEB;
+    }
+    .courses-list{
+        position: relative;
+        top: 0;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        padding: 7px 0;
+        margin: 0;
+        border-bottom: 1px solid #1a8137;
+    }
+    .courses, .hamburger-icon, .close-icon{
+        display: block;
+    }
+    #checkbox-1:checked + .mobile-menu{
+        display: flex;
+    }
+}
