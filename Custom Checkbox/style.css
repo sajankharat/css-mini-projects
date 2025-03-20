@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+.checkbox-container{
+    display: inline-flex;
+}
+
+#checkbox{
+   position: absolute;
+   opacity: 0;
+}
+
+.checkbox-container label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #C2C2C2;
+    border-radius: 4px;
+}
+
+.checkbox-container label:hover{
+    border-color:#4A18D9;
+}
+
+#checkbox:checked + label{
+    background: #4A18D9;
+    border-color: #4A18D9;
+}
+
+#checkbox:focus + label, label:active{
+    outline:2px double #CFBFFF;
+    border-color: #4A18D9;
+}
