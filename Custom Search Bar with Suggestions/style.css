@@ -1,0 +1,168 @@
+/* Apply box-sizing to all elements and remove default margin and padding */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+}
+
+/* Set background color and text color for the body */
+body{
+    background-color: #202124;
+    color: #E8EAED;
+    height: 100vh;
+}
+/* Center the container and add padding */
+
+.container{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 20px;
+}
+/* Style for the logo inside the container */
+.container .logo{
+    max-width: 440px;
+    width: 100%;
+}
+
+.search-menu{
+    max-width: 550px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    border: 2px solid #5F6368;
+    border-radius: 40px;
+    gap: 10px;
+    padding: 0px 20px;
+}
+
+.search-bar:hover, .search-bar:focus-within{
+    background-color: #303134;
+    border-color: #303134;
+    box-shadow: 0px 0px 4px 2px #1F2022;
+}
+
+.search-bar input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #E8EAED;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+}
+
+.close-icon{
+   display: none;
+}
+
+.search-bar input:focus + .close-icon {
+    display: block;
+    cursor: pointer;
+}
+
+.search-bar:focus-within{
+    border-radius:30px 30px 0px 0px;
+}
+
+.top-border{
+    border-top: 2px solid  #5F6368; 
+    margin: 0 20px;
+    padding: 0;
+}
+
+.search-bar:focus-within + .suggestion-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #303134;
+    border-radius:0px 0px 30px 30px;
+    padding: 4px 0 20px;
+}
+
+.suggestion-menu{
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+.suggestion-menu .menu{
+    display: flex;
+    align-items: center;
+    max-height: 28px;
+    gap: 20px;
+    /* font-size: 15px; */
+    text-align: left;
+    cursor: pointer;
+    padding: 0 20px;
+    margin: 1px 0;
+    border-radius: 2px;
+}
+
+.suggestion-menu .menu:hover{
+    background-color: #5F6368;
+}
+/* Style for the suggestion menu items */
+.suggestion-menu .menu span{
+    color: #E8EAED;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.doodle-shapes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 131.25px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 30px;
+    z-index: 0;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #5F6368;
+}
+
+/* Media query for very small screens */
+@media screen and (max-width: 150px) {
+    .search-bar{
+        padding: 10px;
+        height: 2px;
+        gap: 0;
+    }
+    .search-Icon, .close-icon, .menu img{
+        height: 20px;
+        width: 15px;
+    }
+    .suggestion-menu .menu{
+        gap: 4px;
+        font-size: 10px;
+        padding: 0 10px;
+    }
+    .doodle-shapes img{
+        max-width: 50px;
+    }
+}
+
