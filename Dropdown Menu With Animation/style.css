@@ -1,0 +1,75 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", serif;
+    /* border: 0.7px solid red; */
+}
+
+.side-menu{
+    max-width: 288px;
+    /* height: 100vh; */
+    margin: 10px;
+    box-shadow: 0px 8px 16px 0px #00000014;
+}
+
+.dropdown input{
+    opacity: 0;
+}
+
+.dropdown-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px dashed #5128C6;
+    margin: 4px 0;
+}
+.icon-title{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.dropdown-menu input:checked + svg{
+    transform: rotate(-180deg);
+    transition: 0.9s;
+}
+.menu-items{
+    height: 0;
+    overflow: hidden;
+    list-style: none;
+
+    /* margin: 0; */
+    /* transition: all 6s ease-in-out; */
+
+}
+.menu-items li{
+    display: flex;
+    align-items: center;
+    height: 36px;
+    font-size: 14px;
+    padding-left: 40px;
+    cursor: pointer;
+    /* transition: all 6s ease-in-out; */
+    /* transition: 0.9s; */
+}
+.menu-items li:hover{
+    background-color: #F5F5F5;
+    color: #9E9E9E;
+    border: 1px solid #9E9E9E;
+    font-size: 13px;
+}
+
+.dropdown:has(input:checked) .menu-items{
+    height: initial;
+}
+.dropdown:has(input:checked) .dropdown-menu{
+    border-radius: 3px 3px 0 0;
+    background-color: #5128C6;
+    color: #ffffff;
+    stroke: #ffffff;
+}
