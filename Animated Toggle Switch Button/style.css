@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+.switch-container{
+    display: inline-block;
+}
+
+#switch{
+   position: absolute;
+   opacity: 0;
+}
+
+.switch-container label{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 1.1px;
+    width: 28px;
+    border: 1px solid #C2C2C2;
+    border-radius: 15px;
+    background: #E0E0E0;
+    cursor: pointer;
+}
+
+.switch-container label .circle{
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 2px black;
+    cursor: progress;
+}
+
+.switch-container label:hover{
+    border-color:#4A18D9;
+}
+
+#switch:checked + label{
+    background: #4A18D9;
+    border-color: #4A18D9;
+    justify-content: right;
+}
+
+#switch:focus + label, label:active{
+    outline: 2px double #CFBFFF;
+    border-color: #4A18D9;
+}
