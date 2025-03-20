@@ -1,0 +1,141 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #001422;
+    color: #FFFFFF;  
+    font-family: "Montserrat", serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    width: 100%;
+    overflow: hidden;
+}
+.card-cantainer{
+    backdrop-filter: blur(20px);
+}
+.circle{
+   position: absolute;
+   border-radius: 100%; 
+}
+.circle:hover{
+    transform: scale(110%);
+    transition:2s;
+}
+.circle-1{
+    width: 329px;
+    height: 329px;
+    background: radial-gradient(63.62% 63.62% at 50% 50%, #FF00C7 0%, #BD95FF 0.01%, #A661FF 32.29%, #6100FF 98.59%) ;
+    top: -40px;
+    right: -230px;
+}
+.circle-2{
+    width: 138.34px;
+    height: 138.34px;
+    background: radial-gradient(69.62% 69.62% at 50% 50%, #EA8BFA 0%, #7526F5 100%);
+    top: -40px;
+    left: -60px;
+}
+.circle-3{
+    width: 230.56px;
+    height: 230.56px;
+    background: radial-gradient(67.47% 67.47% at 50% 50%, #FED0FF 0%, #7F00FF 100%); 
+    bottom: -120px;
+    left: -150px;
+}
+
+.card-outer{
+    backdrop-filter: blur(20px);
+    background: linear-gradient(151.53deg, rgba(255, 255, 255, 0.4) 6.01%, rgba(255, 255, 255, 0.1) 92.61%);
+    max-width: 380px;
+    max-height: 80vh;
+    box-shadow: -2px -2px 10px #0b96d15e;
+    padding: 19px;
+    border-radius:11px ;
+}
+.card-inner{
+    backdrop-filter: blur(2px);
+    border:0.74px solid #FFFFFF3D;
+    border-radius: 11px;
+}
+.thumnail-img{
+    width: 100%;
+    border-radius: 11px 11px 0 0;
+}
+.card-cantent{
+    padding-inline: 18px;
+}
+.level-like{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.level-like .level{
+    color:#FFD147;
+    text-transform: capitalize;
+    background-color:  #F1C6443D;
+    border-radius: 4px;
+    letter-spacing: 3%;
+    font-weight: 500;
+    padding: 5px;
+    font-size: 18px;
+}
+.card-title{
+    font-weight: 700;
+    letter-spacing: 1.5%;
+    font-size: 17.85px;
+    margin-top: 2px;
+}
+.by-teacher{
+    font-size: 11.9px;
+    font-weight: 500;
+    color: #ffffff9f;
+    margin-bottom: 3px;
+}
+.rating-star{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+}
+.rating-digit{
+    color: #F1C644;
+    opacity: 0.7;
+}
+.rating-count{
+    color: #DBDBDB;
+    font-weight: 400;
+    opacity: 0.7;
+}
+.buy-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 80px;
+    gap: 9px;
+    font-weight: 400;
+    font-size: 18px;
+    color:#ffffffa1;
+    border-top: 0.74px solid #FFFFFF3D;
+    cursor: pointer;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.74px solid #FFFFFF3D;
+    text-transform: capitalize;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
