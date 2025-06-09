@@ -22,7 +22,7 @@ To get started with the **css-mini-projects**, follow these simple steps:
 1. **Clone the Repository**
    Open your terminal and run the following command to clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/css-mini-projects.git
+   git clone https://github.com/sajankharat/css-mini-projects.git
 
 Navigate to the Project Directory Change your directory to the cloned repository:
 ```
